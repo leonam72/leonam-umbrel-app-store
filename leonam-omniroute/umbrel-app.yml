@@ -1,0 +1,40 @@
+manifestVersion: 1
+id: leonam-omniroute
+category: ai
+name: OmniRoute
+version: "3.8.51"
+tagline: Unified AI gateway - one OpenAI-compatible endpoint for every LLM
+description: >-
+  OmniRoute is a free, MIT-licensed AI gateway that puts a single
+  OpenAI-compatible endpoint in front of hundreds of AI providers. It routes
+  requests across providers and models with quota-aware automatic fallback,
+  so a request never fails just because one provider hit its rate limit.
+
+  Key features:
+
+  - One endpoint, hundreds of providers and 1000+ models
+  - Quota-aware routing with automatic fallback
+  - Combos: ordered model chains with your own routing strategy
+  - Works out of the box with no API keys configured
+  - OpenAI-compatible API, so any client that speaks OpenAI works
+  - RTK + Caveman compression to cut token usage
+  - Built-in MCP server so agents can control the gateway itself
+
+  This is a community packaging of the upstream project. It is not affiliated
+  with or endorsed by Umbrel.
+developer: Diego Souza
+dependencies: []
+permissions: []
+repo: https://github.com/diegosouzapw/OmniRoute
+port: 20128
+releaseNotes: >-
+  Initial community packaging of OmniRoute 3.8.51.
+  Configured for the Umbrel proxy on port 20128 with a 2 GB memory limit,
+  sized for dashboard and light chat use.
+support: https://github.com/diegosouzapw/OmniRoute/issues
+website: https://omniroute.online
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: leonam72

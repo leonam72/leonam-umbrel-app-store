@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: leonam-omniroute_omniroute_1
+      APP_PORT: 20128
+      PROXY_AUTH_ADD: "false"
+
+  omniroute:
+    image: diegosouzapw/omniroute:3.8.51
+    restart: on-failure
+    stop_grace_period: 40s
+    volumes:
+      - ${UMBREL_ROOT}/data/omniroute:/app/data
+    mem_limit: 2g
+    environment:
+      - PORT=20128
+      - DATA_DIR=/app/data
