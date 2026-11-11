@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   omniroute:
-    image: diegosouzapw/omniroute:3.8.51
+    image: diegosouzapw/omniroute:3.8.53
     restart: on-failure
     stop_grace_period: 40s
     volumes:

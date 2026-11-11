@@ -2,7 +2,7 @@ manifestVersion: 1
 id: leonam-omniroute
 category: ai
 name: OmniRoute
-version: "3.8.51"
+version: "3.8.53"
 tagline: Unified AI gateway - one OpenAI-compatible endpoint for every LLM
 description: >-
   OmniRoute is a free, MIT-licensed AI gateway that puts a single
@@ -28,9 +28,14 @@ permissions: []
 repo: https://github.com/diegosouzapw/OmniRoute
 port: 20128
 releaseNotes: >-
-  Initial community packaging of OmniRoute 3.8.51.
-  Configured for the Umbrel proxy on port 20128 with a 2 GB memory limit,
-  sized for dashboard and light chat use.
+  OmniRoute 3.8.53 (supersedes 3.8.51 and 3.8.52).
+  Adds support for Google's new Antigravity rollout, including the
+  Gemini 4 Argon quota family and entitlement sync (fixes the
+  "This version of Antigravity is no longer supported" error),
+  live-discovered Antigravity models in quota normalization,
+  and many provider/resilience fixes. See the upstream changelog
+  for details. Configured for the Umbrel proxy on port 20128 with a
+  2 GB memory limit, sized for dashboard and light chat use.
 support: https://github.com/diegosouzapw/OmniRoute/issues
 website: https://omniroute.online
 icon: https://raw.githubusercontent.com/leonam72/leonam-umbrel-app-store/master/leonam-omniroute/icon.svg
